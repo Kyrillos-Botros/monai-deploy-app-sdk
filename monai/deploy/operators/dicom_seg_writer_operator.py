@@ -176,7 +176,7 @@ class DICOMSegmentationWriterOperator(Operator):
     SUPPORTED_EXTENSIONS = [".nii", ".nii.gz", ".mhd"]
     # DICOM instance file extension. Case insensitive in string comparison.
     DCM_EXTENSION = ".dcm"
-
+    # Adding omit_empty_frames inside the constructor
     def __init__(
         self,
         fragment: Fragment,
